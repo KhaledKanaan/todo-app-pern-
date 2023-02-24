@@ -1,0 +1,74 @@
+
+.todo-table {
+    width: 50%;
+    max-width: 90%;
+    margin: auto;  
+}
+
+.todo-info {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    min-height: 55px;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 2px 1px rgba(128, 128, 128, 0.295);
+    background-color: antiquewhite;
+}
+
+/* .todo-info td {
+    text-align: center;
+    height: 100%;
+} */
+
+.todo-info td > button{
+    margin: 0px 3px;
+    box-sizing: border-box;
+    border: 0;
+    box-shadow: 0px 0px 3px 2px rgba(128, 128, 128, 0.295);
+    color: aliceblue;
+    height: 22px;
+    width: 50px;
+}
+
+.todo-info td > button:active{
+
+    box-shadow: 0px 0px 0px 0px;
+}
+
+.todo-info td > button[class='delete-btn']{
+    background-color: rgb(238, 79, 79);
+    
+}
+
+.todo-info td > button[class='edit-btn']{
+    background-color: rgb(86, 147, 240);
+
+}
+
+
+.todo-info td[class='description'] {
+    margin-left: 15px;
+    color: rgb(0, 0, 77);
+}
+
+.separator {
+    height: 100%;
+    width: 2px;
+    background-color: rgba(128, 128, 128, 0.644);
+    z-index: 10;
+    margin-right: 10px;
+}
+
+.todo-info td[class='controls'] {
+    min-width: 130px;
+    height: 100%;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
